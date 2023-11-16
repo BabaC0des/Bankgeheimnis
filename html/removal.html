@@ -18,13 +18,13 @@
       class="nav-links duration-500 md:static absolute bg-blue-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
       <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
         <li>
-          <a href='index.html' class="nav under-nav duration-500 ease-in-out" >Home</a>
+          <a href='index.html' class="nav duration-500 ease-in-out" >Home</a>
         </li>
         <li>
           <a class="nav duration-500 ease-in-out" href="history.html">Geschichte</a>
         </li>
         <li>
-          <a class="nav duration-500 ease-in-out" href="removal.html">Abschaffung</a>
+          <a class="nav duration-500 ease-in-out under-nav" href="removal.html">Abschaffung</a>
         </li>
         <li>
           <a class="nav duration-500 ease-in-out" href="repercussions.html">Auswirkungen</a>
@@ -41,22 +41,3 @@
     </div>
   </nav>
 </header>
-<div class=' h-96'></div>
-<div class='flex items-center justify-center h-96 w-auto bg-parallax bg-cover bg-fixed'>
-  <h1 class='text-7xl uppercase text-blue-800 font-extrabold sm:text-center'>Das Bankgeheimnis</h1>
-</div>
-<div class='h-96 bg-white'>Text</div>
-
-
-
-
-
-<script>
-    const navLinks = document.querySelector('.nav-links')
-    function onToggleMenu(e){
-        e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[8%]')
-    }
-</script>
-</body>
-</html>
