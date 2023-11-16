@@ -567,8 +567,8 @@ video {
   height: 48px;
 }
 
-.h-\[64px\] {
-  height: 64px;
+.h-\[72px\] {
+  height: 72px;
 }
 
 .h-full {
@@ -716,6 +716,29 @@ video {
 
 .nav:hover::after {
   width: 100%;
+}
+
+.under-nav {
+  position: relative;
+  margin-left: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.under-nav::after {
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 /* Hide scrollbar for Chrome, Safari, and Opera */
