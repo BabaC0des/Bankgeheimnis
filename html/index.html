@@ -1,17 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta name='viewport' content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
-    <title>Title</title>
-    <link rel="stylesheet" href="../css/output.css" />
-    <script src="../js/script.js"></script>
-  </head>
-  <body class=' no-scrollbar bg-gradient-to-b from-gray-700  from-20% via-100% via-gray-900 to-100%  to-black h-full w-full text-white'>
-  <!--Needs enough Content to strech shouldnt be a Problem with content Later on -->
-  <main class='h-96 text-white'>test</main>
-  <main class='h-96 text-white'>test</main>
-  <main class='h-96 text-white'>test</main>
+<head>
+  <meta name='viewport' content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/output.css" />
+  <script src="../js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class='no-scrollbar bg-white  to-black h-full w-full text-white'>
+<!--Needs enough Content to stretch shouldn't be a Problem with content Later on -->
+<header class="bg-blue-800 md:rounded-none">
+  <nav class="flex justify-between items-center w-[92%] mx-auto">
+    <div class='h-[64px]'>
+    </div>
+    <img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'>
+    <div
+      class="nav-links duration-500 md:static absolute bg-blue-800 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+        <li>
+          <a class="hover:text-gray-400 font-bold text-2xl duration-500 transition ease-in-out" href="#">Home</a>
+        </li>
+        <li>
+          <a class="hover:text-gray-400 font-bold text-2xl duration-500 transition ease-in-out" href="#">Geschichte</a>
+        </li>
+        <li>
+          <a class="hover:text-gray-400 font-bold text-2xl duration-500 transition ease-in-out" href="#">Abschaffung</a>
+        </li>
+        <li>
+          <a class="hover:text-gray-400 font-bold text-2xl duration-500 transition ease-in-out" href="#">Auswirkungen</a>
+        </li>
+        <li>
+          <a class="hover:text-gray-400 font-bold text-2xl duration-500 transition ease-in-out" href="#">Das Team</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-cent gap-6">
 
-  </body>
 
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white md:hidden"></ion-icon>
+    </div>
+  </nav>
+</header>
+<div class=' h-96'></div>
+<div class='flex items-center justify-center h-96 w-auto bg-parallax bg-cover bg-fixed'>
+  <h1 class='text-7xl uppercase text-blue-700 font-extrabold'>Das Bankgeheimnis</h1>
+</div>
+<div class='h-96 bg-white'>Text</div>
+
+
+
+
+
+<script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[8%]')
+    }
+</script>
+</body>
 </html>
