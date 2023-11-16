@@ -14,7 +14,7 @@ A School Project about the swiss Bank secret
 #### Research and Writing
 ```Saalim Baba```
 # Deployment
-```[Deployment Link will follow]```
+```[prwr-website.vercel.app]```
 
 ### How to run the build on your own
 ```npx tailwindcss -i ./css/input.css -o ./css/output.css --watch```
