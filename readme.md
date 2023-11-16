@@ -21,3 +21,4 @@ A School Project about the swiss Bank secret
 
 # and always make sure
 ## Coding only on dev main, main is production
+### Keep the index.html file on root level for possible Deployments (vercel in this case) so it gets recognized
