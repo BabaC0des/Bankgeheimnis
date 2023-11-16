@@ -660,6 +660,10 @@ video {
   align-self: center;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -850,21 +854,19 @@ video {
   content: var(--tw-content);
 }
 
-@layer utilities responsive {
-  /* Hide scrollbar for Chrome, Safari, and Opera */
+/* Hide scrollbar for Chrome, Safari, and Opera */
 
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
-  /* Hide scrollbar for IE, Edge, and Firefox */
+/* Hide scrollbar for IE, Edge, and Firefox */
 
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
-  }
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .hover\:text-white:hover {
