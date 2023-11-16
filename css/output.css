@@ -559,10 +559,6 @@ video {
   display: flex;
 }
 
-.h-80 {
-  height: 20rem;
-}
-
 .h-96 {
   height: 24rem;
 }
@@ -579,12 +575,8 @@ video {
   height: 100%;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
-.h-12 {
-  height: 3rem;
+.h-48 {
+  height: 12rem;
 }
 
 .min-h-\[60vh\] {
@@ -605,10 +597,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .cursor-pointer {
@@ -639,19 +627,9 @@ video {
   gap: 2rem;
 }
 
-.rounded-b-3xl {
-  border-bottom-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-}
-
-.rounded-b-2xl {
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-
-.bg-blue-800 {
+.bg-blue-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -659,8 +637,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
+}
+
 .bg-parallax {
-  background-image: url("/img/bg.png");
+  background-image: url("/img/web_zurich_paradeplatz_tram_zt_8121_1600x900.jpg");
 }
 
 .to-black {
@@ -680,6 +662,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -690,31 +677,16 @@ video {
   line-height: 1;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
   font-weight: 800;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .uppercase {
   text-transform: uppercase;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-700 {
@@ -727,9 +699,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-500 {
+.text-blue-900 {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
 }
 
 .transition {
@@ -763,33 +740,15 @@ video {
   /* Firefox */
 }
 
-.hover\:translate-y-3:hover {
-  --tw-translate-y: 0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:-translate-y-3:hover {
-  --tw-translate-y: -0.75rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.hover\:text-gray-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover {
-  text-decoration-line: underline;
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -826,15 +785,7 @@ video {
     border-radius: 0px;
   }
 
-  .md\:bg-blue-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:bg-blue-800 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  .md\:text-center {
+    text-align: center;
   }
 }
