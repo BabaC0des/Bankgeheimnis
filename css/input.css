@@ -5,6 +5,9 @@
 
 
 @layer utilities {
+
+
+
     .nav{
         @apply relative ml-10 text-white font-extrabold tracking-[1px] text-3xl
     }
