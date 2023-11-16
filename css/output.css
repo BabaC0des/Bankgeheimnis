@@ -546,8 +546,8 @@ video {
   top: -100%;
 }
 
-.top-\[8\%\] {
-  top: 8%;
+.top-\[7\%\] {
+  top: 7%;
 }
 
 .mx-auto {
@@ -747,11 +747,6 @@ video {
   line-height: 1;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -781,11 +776,6 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-
-.text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
 }
 
 .text-transparent {
@@ -860,19 +850,21 @@ video {
   content: var(--tw-content);
 }
 
-/* Hide scrollbar for Chrome, Safari, and Opera */
+@layer utilities responsive {
+  /* Hide scrollbar for Chrome, Safari, and Opera */
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 
-/* Hide scrollbar for IE, Edge, and Firefox */
+  /* Hide scrollbar for IE, Edge, and Firefox */
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
 }
 
 .hover\:text-white:hover {
@@ -981,6 +973,10 @@ video {
 
   .md\:gap-\[4vw\] {
     gap: 4vw;
+  }
+
+  .md\:rounded-none {
+    border-radius: 0px;
   }
 }
 
