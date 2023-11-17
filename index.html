@@ -2,20 +2,22 @@
 <html lang="de-ch">
 <head>
   <meta name='viewport' content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
-  <title>Title</title>
+  <title>Home</title>
+  <link rel='icon' href='/img/swiss%20lock%20icon.png'>
+
   <link rel="stylesheet" href="css/output.css" />
   <script src="js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
-<body class='no-scrollbar bg-white  to-black h-full w-full text-white'>
+<body class='overflow-x-hidden no-scrollbar bg-gray-800  to-black h-full w-full text-white'>
 <!--Needs enough Content to stretch shouldn't be a Problem with content Later on  -->
-<header class="dark:bg-gray-900">
+<header class="bg-gray-900">
   <nav class="flex justify-between items-center w-[92%] mx-auto">
     <div class='h-[72px]'>
     </div>
     <img alt='swiss' class='h-[48px] w-[44px]' src='img/Coat_of_arms_of_Switzerland.svg.png'>
     <div
-      class="nav-links duration-500 md:static absolute dark:bg-gray-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+      class="nav-links duration-500 md:static absolute bg-gray-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
       <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
         <li>
           <a href='index.html' class="nav under-nav duration-500 ease-in-out" >Home</a>
@@ -41,29 +43,42 @@
     </div>
   </nav>
 </header>
-<div class=' h-96'></div>
+  <div class='h-128 bg-gray-800 text-white'>
+    <div class='pt-14 pl-14 '>
+      <div class='lg:flex lg:flex-row md:flex-col md:items-center'>
+        <div class='mr-48'>
+      <div class=' text-6xl font-bold mb-3 w-1/5 h-1/5 mr-20'>Willkommen
+      </div>
+          <div class='w-128'>Tauchen Sie in die spannende Wirtschaftsgeschichte der Schweiz ein und lernen Sie die Erfolgsgeschichte des Westeuropäischen Land kennen. Das Bankgeheimnis ist ein kontrovers diskutiertes, jedoch unverzichtbares Teilgebiet, welches nicht in der Geschichte der heutigen wirtschaftsstarken Schweiz fehlen darf. Wir enthüllen die düsteren Geheimnisse, die für Jahrzehnte hinter Schloss und Riegeln versteckt wurden, erläutern die genauen Ereignisse, die Auswirkungen um den Globus und wie es zum Ende des berühmten Schweizer Bankgeheimnis kam.</div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+
+<!--Parallax Effect-->
 <div class='flex items-center justify-center h-96 w-auto bg-parallax bg-cover bg-fixed'>
   <h1 class='text-7xl uppercase text-transparent bg-gradient-to-r to-white via-blue-600 from-blue-800 bg-clip-text font-extrabold sm:text-center'>Das Bankgeheimnis</h1>
 </div>
-<div class='h-96 bg-white'>Text</div>
+
+
+<div clasS='h-128'></div>
 
 
 
-
-
-<footer class="bg-white dark:bg-gray-900">
+<footer class="bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
     <div class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
         <a href="html/team.html" class="flex items-center">
 
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Team Three</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Team Three</span>
         </a>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase  dark:text-white">Resources</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
+          <ul class=" text-gray-400 font-medium">
             <li class="mb-4">
               <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
             </li>
@@ -76,8 +91,8 @@
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Find us</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Find us</h2>
+          <ul class=" text-gray-400 font-medium">
             <li class="mb-4">
               <a href="https://github.com/Poisonlocket/PRWR-website" class=" hover:text-white duration-300 ease-in-out">Github</a>
             </li>
@@ -87,8 +102,8 @@
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">The Team</h2>
-          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold uppercase text-white ">The Team</h2>
+          <ul class="text-gray-500 font-medium">
             <li class="mb-4">
               <a class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Lorenzo Bonometti - Lead Developer</a>
             </li>
@@ -102,9 +117,9 @@
         </div>
       </div>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="html/team.html" class="">Team Three</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center">© 2023 <a href="html/team.html" class="">Team Three</a>. All Rights Reserved.
           </span>
       <div class="flex mt-4 sm:justify-center sm:mt-0">
         <a class='ml-3' href='https://github.com/Poisonlocket/PRWR-website'>
@@ -128,7 +143,7 @@
     const navLinks = document.querySelector('.nav-links')
     function onToggleMenu(e){
         e.name = e.name === 'menu' ? 'close' : 'menu'
-        navLinks.classList.toggle('top-[8%]')
+        navLinks.classList.toggle('top-[7%]')
     }
 </script>
 </body>
