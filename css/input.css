@@ -2,7 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .group-date{
+        @apply
+        text-4xl text-white
+        px-3 py-4
+        font-bold tracking-widest
+    }
 
+    .timeline{
+        @apply
+        border-l-4 border-white
+        ml-3 mt-3 py-16
+        space-y-14
+    }
+    .dot{
+        @apply
+        absolute top-5 -left-3.5
+        bg-blue-700
+        h-6 w-6
+        rounded-full
+        border-4 border-gray-800
+    }
+
+    .timeline-date{
+        @apply text-xs font-bold
+        text-blue-600 tracking-widest
+    }
+
+    .timeline-title{
+        @apply
+        text-3xl text-blue-400 font-semibold
+        tracking-wide mb-2
+    }
+}
 
 @layer utilities {
     /*Write your own classes here*/
