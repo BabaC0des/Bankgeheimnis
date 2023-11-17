@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./html/history.html","./html/removal.html", "./html/repercussions.html", "./html/team.html"],
+  content: [
+    "./index.html",
+    "./html/history.html",
+    "./html/removal.html",
+    "./html/repercussions.html",
+    "./html/team.html",
+  ],
   theme: {
     extend: {
       backgroundImage: {
@@ -15,7 +21,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-      require('tailwind-scrollbar-hide')
-  ],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
