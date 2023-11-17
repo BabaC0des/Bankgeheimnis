@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="de-ch">
+<head>
+  <meta name='viewport' content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/output.css" />
+  <script src="../js/script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body class='no-scrollbar bg-white  to-black h-full w-full text-white'>
+<!--Needs enough Content to stretch shouldn't be a Problem with content Later on -->
+<header class="bg-gray-900 md:rounded-none">
+  <nav class="flex justify-between items-center w-[92%] mx-auto">
+    <div class='h-[72px]'>
+    </div>
+    <img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'>
+    <div
+      class="nav-links duration-500 md:static absolute bg-gray-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+        <li>
+          <a href='../index.html' class="nav duration-500 ease-in-out" >Home</a>
+        </li>
+        <li>
+          <a class="nav duration-500 ease-in-out" href="history.html">Geschichte</a>
+        </li>
+        <li>
+          <a class="nav duration-500 ease-in-out under-nav" href="removal.html">Abschaffung</a>
+        </li>
+        <li>
+          <a class="nav duration-500 ease-in-out" href="repercussions.html">Auswirkungen</a>
+        </li>
+        <li>
+          <a class="nav duration-500 ease-in-out whitespace-nowrap" href="team.html">Das Team</a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-cent gap-6">
+
+
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white md:hidden"></ion-icon>
+    </div>
+  </nav>
+</header>
+<!--Get content to push down footer after that its responsive-->
+
+<footer class="bg-gray-900">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="md:flex md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <a href="team.html" class="flex items-center">
+
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Team Three</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase  text-white">Resources</h2>
+          <ul class="text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
+            </li>
+            <li class="mb-4">
+              <a href="https://ionic.io/ionicons" class=" hover:text-white duration-300 ease-in-out">Ionicons</a>
+            </li>
+            <li class="mb-4">
+              <a href="https://flowbite.com/" class=" hover:text-white duration-300 ease-in-out">Flowbite</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold text-white uppercase">Find us</h2>
+          <ul class="text-gray-400  font-medium">
+            <li class="mb-4">
+              <a href="https://github.com/Poisonlocket/PRWR-website" class=" hover:text-white duration-300 ease-in-out">Github</a>
+            </li>
+            <li>
+              <a href="team.html" class=" hover:text-white duration-300 ease-in-out">Team Three</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold  uppercase text-white">The Team</h2>
+          <ul class="text-gray-400 font-medium">
+            <li class="mb-4">
+              <a class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Lorenzo Bonometti - Lead Developer</a>
+            </li>
+            <li class='mb-4'>
+              <a class='hover:text-white duration-300 ease-in-out'>Salih Ejder - Developer</a>
+            </li>
+            <li class=''>
+              <a class='hover:text-white duration-300 ease-in-out'>Saalim Baba - Research &amp; Writing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="team.html" class="">Team Three</a>. All Rights Reserved.
+          </span>
+      <div class="flex mt-4 sm:justify-center sm:mt-0">
+        <a class='ml-3' href='https://github.com/Poisonlocket/PRWR-website'>
+          <ion-icon class='text-3xl pl-20' name="logo-github"></ion-icon>
+        </a>
+        <a class='ml-3' href='https://ksh.ch'>
+          <ion-icon class='text-3xl' name="school"></ion-icon>
+        </a>
+        <a class='ml-3'>
+          <ion-icon color='blue' class='text-3xl' name="logo-ionic"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  const navLinks = document.querySelector('.nav-links')
+  function onToggleMenu(e){
+    e.name = e.name === 'menu' ? 'close' : 'menu'
+    navLinks.classList.toggle('top-[7%]')
+  }
+</script></body>
+</html>
