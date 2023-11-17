@@ -660,6 +660,10 @@ video {
   width: 100%;
 }
 
+.w-128 {
+  width: 32rem;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
