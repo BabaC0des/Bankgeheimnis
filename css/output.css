@@ -611,6 +611,14 @@ video {
   position: sticky;
 }
 
+.-left-1 {
+  left: -0.25rem;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -625,14 +633,6 @@ video {
 
 .top-\[7\%\] {
   top: 7%;
-}
-
-.-left-1 {
-  left: -0.25rem;
-}
-
-.-top-1 {
-  top: -0.25rem;
 }
 
 .z-10 {
@@ -743,10 +743,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .max-w-screen-xl {
