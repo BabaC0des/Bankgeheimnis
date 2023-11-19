@@ -1253,3 +1253,35 @@ video {
     margin-right: 1.5rem;
   }
 }
+
+@media (min-width: 1500px) {
+  .\32xl\:mx-192 {
+    margin-left: 48rem;
+    margin-right: 48rem;
+  }
+
+  .\32xl\:mx-128 {
+    margin-left: 32rem;
+    margin-right: 32rem;
+  }
+
+  .\32xl\:mx-96 {
+    margin-left: 24rem;
+    margin-right: 24rem;
+  }
+
+  .\32xl\:mx-56 {
+    margin-left: 14rem;
+    margin-right: 14rem;
+  }
+
+  .\32xl\:mx-64 {
+    margin-left: 16rem;
+    margin-right: 16rem;
+  }
+
+  .\32xl\:mx-72 {
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+}
