@@ -8,6 +8,10 @@ module.exports = {
     "./html/team.html",
   ],
   theme: {
+    screens:{
+      'xs': '240px',
+      '2xl': '1500px'
+    },
     extend: {
       screens:{
         'xs': '240px',
