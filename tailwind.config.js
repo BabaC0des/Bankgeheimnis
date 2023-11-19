@@ -8,6 +8,9 @@ module.exports = {
     "./html/team.html",
   ],
   theme: {
+    screens:{
+      'xs': '240px'
+    },
     extend: {
       backgroundImage: {
         parallax:
