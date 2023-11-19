@@ -15,6 +15,9 @@ module.exports = {
       },
       spacing: {
         128: "32rem",
+        192: "48rem",
+        256: "64rem",
+        260: "80rem",
       },
       boxShadow: {
         bot_shadow: "0 4px 60px black",
