@@ -2,12 +2,15 @@
 <html lang="de-ch">
 <head>
   <meta name='viewport' content="width=device-width, initial-scale=1.0" charset="UTF-8"/>
-  <title>Title</title>
+  <title>Auswirkungen</title>
+  <link rel='icon' href='/img/swisslock.png'>
   <link rel="stylesheet" href="../css/output.css" />
   <script src="../js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class='no-scrollbar bg-white  to-black h-full w-full text-white'>
+<body class='no-scrollbar bg-gray-800  to-black h-full w-full text-white'>
 <!--Needs enough Content to stretch shouldn't be a Problem with content Later on -->
 <header class="bg-gray-900 md:rounded-none">
   <nav class="flex justify-between items-center w-[92%] mx-auto">
@@ -24,11 +27,12 @@
           <a class="nav duration-500 ease-in-out" href="history.html">Geschichte</a>
         </li>
         <li>
-          <a class="nav duration-500 ease-in-out" href="removal.html">Abschaffung</a>
-        </li>
-        <li>
           <a class="nav duration-500 ease-in-out under-nav" href="repercussions.html">Auswirkungen</a>
         </li>
+        <li>
+          <a class="nav duration-500 ease-in-out" href="removal.html">Abschaffung</a>
+        </li>
+
         <li>
           <a class="nav duration-500 ease-in-out whitespace-nowrap" href="team.html">Das Team</a>
         </li>
@@ -42,6 +46,258 @@
   </nav>
 </header>
 <!--Get content to push down footer after that its responsive-->
+
+<body class="relative  antialiased">
+<div class='flex justify-center'>
+<main class="relative min-h-screen bg-gray-800 overflow-hidden">
+  <div class="w-full max-w-2xl px-4 md:px-6 py-24">
+
+    <h1 class="text-2xl font-bold text-white mb-4">FAQs</h1>
+
+    <div class="divide-y divide-blue-700">
+      <!-- Accordion item -->
+      <div x-data="{ expanded: false }" class="py-2">
+        <h2>
+          <button
+                  id="faqs-title-01"
+                  type="button"
+                  class="flex items-center justify-between w-full text-left font-semibold py-2"
+                  @click="expanded = !expanded">
+
+            <span>What are the advantages of your service?</span>
+            <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            </svg>
+          </button>
+        </h2>
+        <div
+                id="faqs-text-01"
+                role="region"
+                class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+        >
+          <div class="overflow-hidden">
+            <p class="pb-3">
+              If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div x-data="{ expanded: false }" class="py-2">
+      <h2>
+        <button
+                id="faqs-title-01"
+                type="button"
+                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                @click="expanded = !expanded">
+
+          <span>What are the advantages of your service?</span>
+          <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          </svg>
+        </button>
+      </h2>
+      <div
+              id="faqs-text-01"
+              role="region"
+              class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+              :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+      >
+        <div class="overflow-hidden">
+          <p class="pb-3">
+            If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div x-data="{ expanded: false }" class="py-2">
+      <h2>
+        <button
+                id="faqs-title-01"
+                type="button"
+                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                @click="expanded = !expanded">
+
+          <span>What are the advantages of your service?</span>
+          <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          </svg>
+        </button>
+      </h2>
+      <div
+              id="faqs-text-01"
+              role="region"
+              class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+              :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+      >
+        <div class="overflow-hidden">
+          <p class="pb-3">
+            If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div x-data="{ expanded: false }" class="py-2">
+      <h2>
+        <button
+                id="faqs-title-01"
+                type="button"
+                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                @click="expanded = !expanded">
+
+          <span>What are the advantages of your service?</span>
+          <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          </svg>
+        </button>
+      </h2>
+      <div
+              id="faqs-text-01"
+              role="region"
+              class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+              :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+      >
+        <div class="overflow-hidden">
+          <p class="pb-3">
+            If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="relative min-h-screen bg-gray-800 overflow-hidden">
+  <div class="w-full max-w-2xl px-4 md:px-6 py-24">
+
+    <h1 class="text-2xl font-bold text-white mb-4">FAQs</h1>
+
+    <div class="divide-y divide-blue-700">
+      <!-- Accordion item -->
+      <div x-data="{ expanded: false }" class="py-2">
+        <h2>
+          <button
+                  id="faqs-title-01"
+                  type="button"
+                  class="flex items-center justify-between w-full text-left font-semibold py-2"
+                  @click="expanded = !expanded">
+
+            <span>What are the advantages of your service?</span>
+            <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+              <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            </svg>
+          </button>
+        </h2>
+        <div
+                id="faqs-text-01"
+                role="region"
+                class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+        >
+          <div class="overflow-hidden">
+            <p class="pb-3">
+              If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div x-data="{ expanded: false }" class="py-2">
+      <h2>
+        <button
+                id="faqs-title-01"
+                type="button"
+                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                @click="expanded = !expanded">
+
+          <span>What are the advantages of your service?</span>
+          <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          </svg>
+        </button>
+      </h2>
+      <div
+              id="faqs-text-01"
+              role="region"
+              class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+              :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+      >
+        <div class="overflow-hidden">
+          <p class="pb-3">
+            If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div x-data="{ expanded: false }" class="py-2">
+      <h2>
+        <button
+                id="faqs-title-01"
+                type="button"
+                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                @click="expanded = !expanded">
+
+          <span>What are the advantages of your service?</span>
+          <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          </svg>
+        </button>
+      </h2>
+      <div
+              id="faqs-text-01"
+              role="region"
+              class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+              :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+      >
+        <div class="overflow-hidden">
+          <p class="pb-3">
+            If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div x-data="{ expanded: false }" class="py-2">
+      <h2>
+        <button
+                id="faqs-title-01"
+                type="button"
+                class="flex items-center justify-between w-full text-left font-semibold py-2"
+                @click="expanded = !expanded">
+
+          <span>What are the advantages of your service?</span>
+          <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+            <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          </svg>
+        </button>
+      </h2>
+      <div
+              id="faqs-text-01"
+              role="region"
+              class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+              :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+      >
+        <div class="overflow-hidden">
+          <p class="pb-3">
+            If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing. In the meantime, our collaborative features won't appear in accounts or users that are over the 100-account or 1,000-user limit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</div>
+
+
+
+
 
 <footer class="bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -65,6 +321,9 @@
             <li class="mb-4">
               <a href="https://flowbite.com/" class=" hover:text-white duration-300 ease-in-out">Flowbite</a>
             </li>
+            <li class="mb-4">
+              <a href="https://tailwind-kit.com" class=" hover:text-white duration-300 ease-in-out">Tailwind Kit</a>
+            </li>
           </ul>
         </div>
         <div>
@@ -82,10 +341,10 @@
           <h2 class="mb-6 text-sm font-semibold  uppercase text-white">The Team</h2>
           <ul class="text-gray-400 font-medium">
             <li class="mb-4">
-              <a class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Lorenzo Bonometti - Lead Developer</a>
+              <a class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Lorenzo Bonometti - Developer</a>
             </li>
             <li class='mb-4'>
-              <a class='hover:text-white duration-300 ease-in-out'>Salih Ejder - Developer</a>
+              <a class='hover:text-white duration-300 ease-in-out'>Salih Ejder - UI / UX Specialist</a>
             </li>
             <li class=''>
               <a class='hover:text-white duration-300 ease-in-out'>Saalim Baba - Research &amp; Writing</a>
@@ -112,6 +371,7 @@
     </div>
   </div>
 </footer>
+</body>
 <script>
   const navLinks = document.querySelector('.nav-links')
   function onToggleMenu(e){

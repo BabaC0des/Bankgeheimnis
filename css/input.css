@@ -2,22 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+    .group-date{
+        @apply
+        text-4xl text-white
+        px-3 py-4
+        font-bold tracking-widest
+    }
 
+    .timeline{
+        @apply
+        border-l-4 border-white
+        ml-3 mt-3 py-16
+        space-y-14
+    }
+    .dot{
+        @apply
+        absolute top-5 -left-3.5
+        bg-blue-700
+        h-6 w-6
+        rounded-full
+        border-4 border-gray-800
+    }
+
+    .timeline-date{
+        @apply text-xs font-bold
+        text-blue-600 tracking-widest
+    }
+
+    .timeline-title{
+        @apply
+        text-3xl text-blue-400 font-semibold
+        tracking-wide mb-2
+    }
+}
 
 @layer utilities {
+    /*Write your own classes here*/
 
+    .under-footer{
+        @apply relative text-white tracking-[1px]
+    }
 
+    .under-footer::after{
+        @apply content-[''] bg-blue-700 h-[3px] w-[45%] left-0 -bottom-[5px] absolute
+    }
 
     .nav{
         @apply relative ml-10 text-white font-extrabold tracking-[1px] text-3xl
     }
 
     .nav::after{
-        @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-500
+        @apply content-[''] bg-blue-700 h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-500
     }
 
     .nav:hover::after{
         @apply w-[100%]
+        bg-blue-700
     }
 
     .under-nav{
@@ -25,7 +66,7 @@
     }
 
     .under-nav::after{
-        @apply content-[''] bg-white h-[3px] w-[100%] left-0 -bottom-[5px] absolute
+        @apply content-[''] bg-blue-700 h-[3px] w-[100%] left-0 -bottom-[5px] absolute
     }
 
     @variants responsive{
