@@ -8,14 +8,18 @@ module.exports = {
     "./html/team.html",
   ],
   theme: {
-    screens:{
-      'xs': '240px',
-      '2xl': '1500px'
+    screens: {
+      xs: "240px",
+      "2xl": "1500px",
+      sm: "640px",
+      lg: "1024px",
+      xl: "1280px",
+      md: "768px",
     },
     extend: {
-      screens:{
-        'xs': '240px',
-        '2xl': '1500px'
+      screens: {
+        xs: "240px",
+        "2xl": "1500px",
       },
       backgroundImage: {
         parallax:
