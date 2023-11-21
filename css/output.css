@@ -643,9 +643,19 @@ video {
   z-index: 10;
 }
 
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .mx-48 {
   margin-left: 12rem;
   margin-right: 12rem;
+}
+
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .mx-auto {
@@ -661,16 +671,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-10 {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mb-20 {
@@ -697,12 +697,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .ml-3 {
   margin-left: 0.75rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
 }
 
 .ml-8 {
@@ -717,56 +717,16 @@ video {
   margin-right: 12rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.ml-16 {
-  margin-left: 4rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
 }
 
-.ml-128 {
-  margin-left: 32rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
-.ml-256 {
-  margin-left: 64rem;
-}
-
-.ml-192 {
-  margin-left: 48rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -789,6 +749,10 @@ video {
   height: 24rem;
 }
 
+.h-\[225px\] {
+  height: 225px;
+}
+
 .h-\[48px\] {
   height: 48px;
 }
@@ -801,32 +765,16 @@ video {
   height: 100%;
 }
 
-.h-1\/4 {
-  height: 25%;
-}
-
-.h-1\/2 {
-  height: 50%;
-}
-
-.h-1\/6 {
-  height: 16.666667%;
-}
-
-.h-\[225\] {
-  height: 225;
-}
-
-.h-\[225px\] {
-  height: 225px;
-}
-
 .min-h-\[60vh\] {
   min-height: 60vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-1\/5 {
@@ -839,6 +787,10 @@ video {
 
 .w-72 {
   width: 18rem;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-\[44px\] {
@@ -859,22 +811,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-\[400\] {
-  width: 400;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .max-w-2xl {
@@ -953,10 +889,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .gap-5 {
@@ -1206,11 +1138,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
