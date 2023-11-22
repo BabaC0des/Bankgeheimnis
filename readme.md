@@ -26,7 +26,7 @@ A School Project about the swiss Bank secret
 # The Project Stack
 
 
-<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/ca952553-ef1c-4c73-9a97-df59bc9c654a" width="250" height="250">
+<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/ca952553-ef1c-4c73-9a97-df59bc9c654a" width="350" height="250">
 
 
 
