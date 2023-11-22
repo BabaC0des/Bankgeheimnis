@@ -33,10 +33,9 @@ A School Project about the swiss Bank secret
 
 <img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/b78a29e6-6a74-46a6-ad6a-fbff3bc45276" width="250" height="250">
 
-<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/b78a29e6-6a74-46a6-ad6a-fbff3bc45276" width="250" height="250">
+<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/95583093-af61-4e21-b723-40034aa45d21" width="250" height="250">
 
 
-![alpinejs]() 
 
-<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/02269b67-1f45-441f-983f-e3595aca0061" width="600" height="250">
+<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/02269b67-1f45-441f-983f-e3595aca0061" width="800" height="125">
 
