@@ -37,5 +37,5 @@ A School Project about the swiss Bank secret
 
 
 
-<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/02269b67-1f45-441f-983f-e3595aca0061" width="800" height="125">
+<img src="https://github.com/Poisonlocket/PRWR-website/assets/128643203/02269b67-1f45-441f-983f-e3595aca0061" width="702" height="134">
 
