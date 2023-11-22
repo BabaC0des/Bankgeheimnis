@@ -17,10 +17,6 @@ module.exports = {
       md: "768px",
     },
     extend: {
-      screens: {
-        xs: "240px",
-        "2xl": "1500px",
-      },
       backgroundImage: {
         parallax:
           'url("/img/web_zurich_paradeplatz_tram_zt_8121_1600x900 - Kopie.jpg")',
