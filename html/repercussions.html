@@ -18,8 +18,8 @@
     </div>
     <img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'>
     <div
-      class="nav-links duration-500 md:static absolute bg-gray-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+      class="nav-links duration-500 navp:static absolute bg-gray-900 navp:min-h-fit min-h-[60vh] left-0 top-[-100%] navp:w-auto  w-full flex items-center px-5">
+      <ul class="flex navp:flex-row flex-col navp:items-center navp:gap-[4vw] gap-8">
         <li>
           <a href='../index.html' class="nav duration-500 ease-in-out" >Home</a>
         </li>
@@ -41,38 +41,28 @@
     <div class="flex items-cent gap-6">
 
 
-      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white md:hidden"></ion-icon>
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white navp:hidden"></ion-icon>
     </div>
   </nav>
 </header>
 <!--Get content to push down footer after that its responsive-->
-<div>
-  <div class='flex'>
-  <div class='text-5xl mt-16 font-semibold  ml-5'>
-    Inland
-  </div>
 
-  </div>
-  <div class='flex'>
-  <div title='wrapper' class='flex w-1/2 mt-5'>
-    <div class='w-1/2 mx-5'>
-
-      Lorem ipsum dolor silores et e a rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+<div title='complete wrapper' class='flex mx-5 mt-10 justify-between'>
+  <div title='containment one'>
+    <div class='text-4xl font-semibold' title='header'>Inland</div>
+    <div title='contentwrapper'>
+      <div class='w-1/3' title='text'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+      <img src='../img/a3c1c3ec-cb04-464b-858c-55793b3bc6dd.jpeg' title='image' alt=''>
     </div>
-    <img class='w-[400px] h-[225px]' src='../img/a3c1c3ec-cb04-464b-858c-55793b3bc6dd.jpeg' alt=''>
-
   </div>
-
-  <div title='wrapper' class='flex w-1/2 mt-5'>
-    <div class='w-1/2 mx-5'>
-      Lorem ipsum dolor silores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  <div title='containment two'>
+    <div class='text-4xl font-semibold' title='header '>Ausland</div>
+    <div title='contentwrapper' class='flex'>
+      <div title='text'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+      <img src='../img/a3c1c3ec-cb04-464b-858c-55793b3bc6dd.jpeg' title='image' alt=''>
     </div>
-    <img class='w-[400px] h-[225px]' src='../img/a3c1c3ec-cb04-464b-858c-55793b3bc6dd.jpeg' alt=''>
-
-  </div>
   </div>
 </div>
-
 
 
 <body class="relative  antialiased">
@@ -103,7 +93,7 @@
                 id="faqs-text-02"
                 role="region"
                 class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
-                :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+                  :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
         >
           <div class="overflow-hidden">
             <p class="pb-3">
