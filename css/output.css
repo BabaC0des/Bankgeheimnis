@@ -1001,6 +1001,10 @@ video {
   word-break: normal;
 }
 
+.break-all {
+  word-break: break-all;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1054,6 +1058,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
 }
 
 .bg-opacity-75 {
@@ -1503,6 +1511,11 @@ video {
     line-height: 2.25rem;
   }
 
+  .xs\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
   .xs\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -1602,9 +1615,19 @@ video {
     line-height: 2.5rem;
   }
 
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .md\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 
@@ -1628,6 +1651,10 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:whitespace-nowrap {
+    white-space: nowrap;
   }
 
   .lg\:py-8 {
