@@ -1571,10 +1571,6 @@ video {
     height: 32rem;
   }
 
-  .xs\:w-96 {
-    width: 24rem;
-  }
-
   .xs\:w-\[95\%\] {
     width: 95%;
   }
@@ -1623,6 +1619,10 @@ video {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .sm\:items-center {
@@ -1684,14 +1684,6 @@ video {
 
   .md\:w-48 {
     width: 12rem;
-  }
-
-  .md\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .md\:w-\[95\%\] {
-    width: 95%;
   }
 
   .md\:w-\[85\%\] {
