@@ -16,6 +16,8 @@ module.exports = {
       xl: "1280px",
       md: "768px",
       navp: "1380px",
+      cardresp: "1175px",
+      noresp: "1176px",
     },
     extend: {
       screens: {
