@@ -10,6 +10,8 @@
         font-bold tracking-widest
     }
 
+
+
     .timeline{
         @apply
         border-l-4 border-white
