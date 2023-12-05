@@ -1575,6 +1575,10 @@ video {
     width: 24rem;
   }
 
+  .xs\:w-\[95\%\] {
+    width: 95%;
+  }
+
   .xs\:flex-col {
     flex-direction: column;
   }
