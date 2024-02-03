@@ -7,17 +7,20 @@
   <link rel="stylesheet" href="../css/output.css" />
   <script src="../js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class='no-scrollbar bg-white  to-black h-full w-full text-white'>
+<body class='no-scrollbar bg-gray-800  to-black h-full w-full text-white'>
 <!--Needs enough Content to stretch shouldn't be a Problem with content Later on -->
 <header class="bg-gray-900 md:rounded-none">
   <nav class="flex justify-between items-center w-[92%] mx-auto">
     <div class='h-[72px]'>
     </div>
-    <img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'>
+    <a href='../index.html'><img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'></a>
     <div
-      class="nav-links duration-500 md:static absolute bg-gray-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+
+      class="nav-links duration-500 navp:static absolute bg-gray-900 navp:min-h-fit min-h-[60vh] left-0 top-[-100%] navp:w-auto  w-full flex items-center px-5 z-50">
+      <ul class="flex navp:flex-row flex-col navp:items-center navp:gap-[4vw] gap-8">
         <li>
           <a href='../index.html' class="nav duration-500 ease-in-out" >Home</a>
         </li>
@@ -25,11 +28,12 @@
           <a class="nav duration-500 ease-in-out" href="history.html">Geschichte</a>
         </li>
         <li>
-          <a class="nav duration-500 ease-in-out" href="removal.html">Abschaffung</a>
-        </li>
-        <li>
           <a class="nav duration-500 ease-in-out under-nav" href="repercussions.html">Auswirkungen</a>
         </li>
+        <li>
+          <a class="nav duration-500 ease-in-out" href="removal.html">Abschaffung</a>
+        </li>
+
         <li>
           <a class="nav duration-500 ease-in-out whitespace-nowrap" href="team.html">Das Team</a>
         </li>
@@ -38,25 +42,386 @@
     <div class="flex items-cent gap-6">
 
 
-      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white md:hidden"></ion-icon>
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white navp:hidden"></ion-icon>
     </div>
   </nav>
 </header>
 <!--Get content to push down footer after that its responsive-->
+<!-- ====== About Section Start -->
+<section
+        class="overflow-hidden pt-20 lg:pt-[120px]  bg-gray-800"
+>
+  <div class="container mx-auto">
+    <div class="flex flex-wrap items-center justify-between -mx-4">
+      <div class="w-full px-4 lg:w-6/12">
+        <div class="flex items-center -mx-3 sm:-mx-4">
+          <div class="w-full px-3 sm:px-4 xl:w-1/2">
+            <div class="py-3 scale-100 hover:scale-110 transition ease-in-out duration-500 sm:py-4">
+              <img
+                      src="../img/alain-rieder-gPPke2sncNg-unsplash.jpg"
+                      alt=""
+                      class="w-full rounded-2xl"
+              />
+            </div>
+            <div class="py-3 scale-100 hover:scale-110 transition ease-in-out duration-500 sm:py-4">
+              <img
+                      src="../img/alessio-soggetti-etrym-ApBuI-unsplash.jpg"
+                      alt=""
+                      class="w-full rounded-2xl"
+              />
+            </div>
+          </div>
+          <div class="w-full px-3 sm:px-4 xl:w-1/2">
+            <div class="relative scale-100 hover:scale-110 transition ease-in-out duration-500  z-10 my-4">
+              <img
+                      src="../img/baptiste-gousset-b1iREqfQzCw-unsplash.jpg"
+                      alt=""
+                      class="w-full rounded-2xl"
+              />
+              <span class="absolute -right-7 -bottom-7 z-[-1]">
+
+                     </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+        <div class="mt-10 lg:mt-0">
+
+          <h2 class="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
+            INLAND
+          </h2>
+
+          <div class="divide-y divide-slate-200">
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-01"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-01"
+                >
+                  <span>Gesetzliche Definition und Umfang</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-01"
+                      role="region"
+                      aria-labelledby="faqs-title-01"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300">
+                    Durch die gesetzliche und offizielle Einführung des Bankgeheimnisses wurde der Wirtschaftssektor der Schweiz umgeformt, die Banken hatten dem zu Folge eine rechtliche Pflicht die Daten der Kunden sicher zu bewahren. Dies betraf nicht nur die normalen Mitarbeiter sondern ebenfalls die Organe.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-02"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-02"
+                >
+                  <span>Strafbestimmungen bei Verletzung</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-02"
+                      role="region"
+                      aria-labelledby="faqs-title-02"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300">
+                    Mit jedem neuen Gesetz wird auch eine rechtmässig geregelte Strafe aufgestellt, falls ein Verstoss auftreten sollte. Das Bankengesetz ist keine Ausnahme, es ist jedoch im Gegensatz zu anderen Berufsgeheimnissen als ein Offizialdelikt angesehen wird. Welches bei einem Verstoss heissen würde, dass der Delinquent eine Freiheitsstrafe von bis zu fünf Jahren oder eine Geldstrafe zu erwarten hat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-03"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-03"
+                >
+                  <span>Verrechnungssteuer</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-03"
+                      role="region"
+                      aria-labelledby="faqs-title-03"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300">
+                    Um sicher zu stellen das die Steuerpflichtigen Bürger trotz des Bankgeheimnisses ihre Steuern bezahlen, wurde eine Verrechnungssteuer eingeführt. Diese wird auf zahlreiche Quellen angewendet wie  Kontis, Darlehen, Aktien und Obligationen. Die VST in der Schweiz beträgt 35% welche zu einer der höchsten Prozentsätze gilt, dies heisst auch das es lukrativer und profitabler für viele der Unternehmer ist, wenn sie ihr Vermögen deklarieren.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-04"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-04"
+                >
+                  <span>Anpassungen zur Bekämpfung krimineller Tätigkeiten</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-04"
+                      role="region"
+                      aria-labelledby="faqs-title-04"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300">
+                    Mit dem Anbruch des 21. Jahrhundert wurde sogleich die Sorge um die Geldwäscherei grösser. Es ist üblich, dass das Schweizer Gesetz angepasst werden muss, um kriminelle Tätigkeiten zu unterbinden. Es wurde 1998 das Geldwäschegesetz eingeführt, welches den Ruf des schärfsten Geldwäschegesetz der Welt zu sein haben, soll nach Meinungen der Banken.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-gray-800">
+  <div class="container mx-auto">
+    <div class="flex flex-wrap items-center justify-between -mx-4">
+      <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+        <div class="mt-10 lg:mt-0">
+
+          <h2
+                  class="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]"
+          >
+            AUSLAND
+          </h2>
+
+          <!-- Accordion component -->
+          <div class="divide-y divide-slate-200">
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-01"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-01"
+                >
+                  <span>Venezuela - Geldwäsche und Veruntreuung</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-01"
+                      role="region"
+                      aria-labelledby="faqs-title-01"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300">
+                    Die vergeblichen Versuche der Schweiz kriminale Aktivitäten zu unterbinden schlagen fehl. Die Tribune de Genève enthüllte das sie verdächtige Geldflüsse in Höhe von neun Milliarden entdeckt haben. Sie wurden darauf aufmerksam als Ermittlungen gegen das venezuelische Regime eingeleitet wurden. Diese Gelder wurden auf Hunderte von Konten bei rund 30 verschiedenen Schweizer Banken verteilt.Dies war eine klare Demonstration des Ausmasses der Plünderung Venezuelas.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-02"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-02"
+                >
+                  <span>Zinsbesteuerungsabkommen mit der EU</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-02"
+                      role="region"
+                      aria-labelledby="faqs-title-02"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300">
+                    Die Europäische Union möchte verhindern, dass ihre Bürger die EU-Regelungen umgehen, weshalb die Schweiz sowie andere Drittstaaten für die EU problematisch sind. Deshalb strebt die EU seit 1989 ein Abkommen mit der Schweiz an, welches schließlich im Jahr 2004 erreicht wurde. In der zweiten Tranche der bilateralen Verträge zwischen der Schweiz und der EU abgeregelt das sämtliche Zinszahlungen ein Steuerrückbehalt haben werden. Dieser entwickelt sich in den folgenden Jahren und der Prozentsatz steigt von den originalen 15 Prozent zu 35 Prozent.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-03"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-03"
+                >
+                  <span>Potentatengelder</span>
+                  <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                    <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                      id="faqs-text-03"
+                      role="region"
+                      aria-labelledby="faqs-title-03"
+                      class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+                      :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+              >
+                <div class="overflow-hidden">
+                  <p class="pb-3 text-gray-300 text-gray-300">
+                    Bei Potentatengelder handelt es sich um Instanzen, wo sich politische Persönlichkeiten unrechtmässig bereichern. Dies kann durch Offshore-Bankkonten ermöglicht werden, das sind Konten, welche in einem anderen Land eröffnet werden. Schweiz war ein Hafen für solche Potentatengelder und vor allem Diktatoren verschiedener Länder, wie Jean-Claude Duvalier der ehemalige Diktator Haitis. Dieser flüchtete 1986 in die Schweiz und transferierte 6,3 Millionen in ein Bankkonto, die Summe wurde jedoch dort direkt beschlagnahmt.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion item -->
+            <div x-data="{ expanded: false }" class="py-2">
+              <h2>
+                <button
+                        id="faqs-title-04"
+                        type="button"
+                        class="flex items-center justify-between w-full text-left font-semibold py-2"
+                        @click="expanded = !expanded"
+                        :aria-expanded="expanded"
+                        aria-controls="faqs-text-04"
+                ></button>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full px-4 lg:w-6/12">
+        <div class="flex items-center -mx-3 sm:-mx-4">
+          <div class="w-full px-3 sm:px-4 xl:w-1/2">
+            <div class="relative scale-100 hover:scale-110 transition ease-in-out duration-500 duration-500 z-10 my-4">
+              <img
+                      src="../img/kobby-mendez-DfR2LaXNyUA-unsplash.jpg"
+                      alt=""
+                      class="w-full rounded-2xl"
+              />
+              <span class="absolute -right-7 -bottom-7 z-[-1]">
+
+                     </span>
+            </div>
+          </div>
+          <div class="w-full px-3 sm:px-4 xl:w-1/2">
+            <div class="py-3 scale-100 hover:scale-110 transition ease-in-out duration-500 sm:py-4">
+              <img
+                      src="../img/robert-bye-WTPp4wgourk-unsplash.jpg"
+                      alt=""
+                      class="w-full rounded-2xl"
+              />
+            </div>
+            <div class="py-3 scale-100 hover:scale-110 transition ease-in-out duration-500 sm:py-4">
+              <img
+                      src="../img/micah-camper-UexKF2uvMQI-unsplash.jpg"
+                      alt=""
+                      class="w-full rounded-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== About Section End -->
+
 
 <footer class="bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-    <div class="md:flex md:justify-between">
+    <div  class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href="team.html" class="flex items-center">
+        <a href="html/team.html" class="flex items-center">
 
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Team Three</span>
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
         <div>
-          <h2 class="mb-6 text-sm font-semibold uppercase text-white">Resources</h2>
+          <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">Rechtliches</h2>
           <ul class="text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf' class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Disclaimer</a>
+            </li>
+            <li class='mb-4'>
+              <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf' class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
+            </li>
+            <li class=''>
+              <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf' class='hover:text-white duration-300 ease-in-out'>Quellen</a>
+            </li>
+          </ul>
+
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
+          <ul class=" text-gray-400 font-medium">
             <li class="mb-4">
               <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
             </li>
@@ -66,38 +431,40 @@
             <li class="mb-4">
               <a href="https://flowbite.com/" class=" hover:text-white duration-300 ease-in-out">Flowbite</a>
             </li>
+            <li class="mb-4">
+              <a href="https://tailwind-kit.com"  class=" hover:text-white duration-300 ease-in-out">Tailwind Kit</a>
+            </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold uppercase text-white">Find us</h2>
-          <ul class="text-gray-400 font-medium">
+          <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Find us</h2>
+          <ul class=" text-gray-400 font-medium">
             <li class="mb-4">
               <a href="https://github.com/Poisonlocket/PRWR-website" class=" hover:text-white duration-300 ease-in-out">Github</a>
             </li>
             <li>
-              <a href="team.html" class=" hover:text-white duration-300 ease-in-out">Team Three</a>
+              <a href="html/team.html" class=" hover:text-white duration-300 ease-in-out">Team Three</a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold  uppercase text-white">The Team</h2>
+          <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">The Team</h2>
           <ul class="text-gray-400 font-medium">
             <li class="mb-4">
-              <a class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Lorenzo Bonometti - Lead Developer</a>
+              <a class='hover:text-white duration-300 ease-in-out' href='https://github.com/poisonlocket'>Lorenzo Bonometti - Developer</a>
             </li>
-            <li class='mb-4'>
-              <a class='hover:text-white duration-300 ease-in-out'>Salih Ejder - Developer</a>
-            </li>
+
             <li class=''>
-              <a class='hover:text-white duration-300 ease-in-out'>Saalim Baba - Research &amp; Writing</a>
+              <a href='https://github.com/milaasHD' class='hover:text-white duration-300 ease-in-out'>Saalim Baba - Research &amp; Writing</a>
             </li>
           </ul>
+
         </div>
       </div>
     </div>
-    <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+    <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="team.html" class="">Team Three</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center">© 2023 <a href="html/team.html" class="">Team Three</a>. All Rights Reserved.
           </span>
       <div class="flex mt-4 sm:justify-center sm:mt-0">
         <a class='ml-3' href='https://github.com/Poisonlocket/PRWR-website'>
@@ -113,6 +480,7 @@
     </div>
   </div>
 </footer>
+</body>
 <script>
   const navLinks = document.querySelector('.nav-links')
   function onToggleMenu(e){

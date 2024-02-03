@@ -7,17 +7,19 @@
   <link rel="stylesheet" href="../css/output.css" />
   <script src="../js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/focus@3.x.x/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body class='no-scrollbar bg-white  to-black h-full w-full text-white'>
+<body class=' no-scrollbar bg-white  to-black h-full w-full text-white'>
 <!--Needs enough Content to stretch shouldn't be a Problem with content Later on -->
-<header class="bg-gray-900 md:rounded-none">
-  <nav class="flex justify-between items-center w-[92%] mx-auto">
-    <div class='h-[72px]'>
+<header class=" bg-gray-900 md:rounded-none">
+  <nav class=" flex justify-between items-center w-[92%] mx-auto">
+    <div class=' h-[72px]'>
     </div>
-    <img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'>
+    <a href='../index.html'><img alt='swiss' class='h-[48px] w-[44px]' src='../img/Coat_of_arms_of_Switzerland.svg.png'></a>
     <div
-      class="nav-links duration-500 md:static absolute bg-gray-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-      <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+      class="nav-links duration-500 navp:static absolute bg-gray-900 navp:min-h-fit min-h-[60vh] left-0 top-[-100%] navp:w-auto  w-full flex items-center px-5 z-50">
+      <ul class="flex navp:flex-row flex-col navp:items-center navp:gap-[4vw] gap-8">
         <li>
           <a href='../index.html' class="nav duration-500 ease-in-out" >Home</a>
         </li>
@@ -25,11 +27,12 @@
           <a class="nav duration-500 ease-in-out" href="history.html">Geschichte</a>
         </li>
         <li>
-          <a class="nav duration-500 ease-in-out under-nav" href="removal.html">Abschaffung</a>
-        </li>
-        <li>
           <a class="nav duration-500 ease-in-out" href="repercussions.html">Auswirkungen</a>
         </li>
+        <li>
+          <a class="nav duration-500 ease-in-out under-nav" href="removal.html">Abschaffung</a>
+        </li>
+
         <li>
           <a class="nav duration-500 ease-in-out whitespace-nowrap" href="team.html">Das Team</a>
         </li>
@@ -38,25 +41,128 @@
     <div class="flex items-cent gap-6">
 
 
-      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white md:hidden"></ion-icon>
+      <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer text-white navp:hidden"></ion-icon>
     </div>
   </nav>
 </header>
 <!--Get content to push down footer after that its responsive-->
+<main class="relative min-h-screen bg-gray-800 overflow-hidden flex items-center justify-center flex-col">
+  <div x-data="{ expanded: false }" class="py-4 bg-gray-900 rounded-lg m-10 text-9xl md:text-4xl xs:text-3xl shadow-md pb-10 p-6 my-10">
+    <h2>
+      <button
+              id="faqs-title-01"
+              type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded">
+
+        <span>UBS-Konflikt mit der IRS</span>
+        <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+          <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+        </svg>
+      </button>
+    </h2>
+    <div
+            id="faqs-text-02"
+            role="region"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+    >
+      <div class="overflow-hidden">
+        <p class="pb-3 text-xl pt-14 md:text-lg xs:text-s text-gray-300">
+          UBS-Konflikt mit der IRS Die US-Steuerbehörde vermutet mutmassliche Steuerbetrüger, die in der Schweiz ihr Vermögen aufbewahrten. Sie stellten daraufhin ein Amtshilfegesuch an die UBS für die Kundeninformationen der angeblichen Steuerbetrüger. 2008 meinte der Bundesrat Hans-Rudolf Merz noch selbstsicher wie sich das Ausland ihre Zähne am Schweizer Bankgeheimnis ausbeissen werden. Das Jahr darauffolgend wird ein Abkommen abgeschlossen, welches die Schweizer Grossbank dazu verpflichtet Daten von 255 amerikanischen Kunden der IRS zu übergeben. Ebenfalls musste die UBS eine Summe von 780 Millionen US-Dollar bezahlen.
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr class='w-[95%] rounded-xl h-1.5 my-3 bg-blue-800 border-0'></hr>
+  <div x-data="{ expanded: false }" class="py-2 m-10 text-9xl bg-gray-900 rounded-lg md:text-4xl xs:text-3xl shadow-md pb-10 p-6 my-10">
+    <h2>
+      <button
+              id="faqs-title-03"
+              type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded">
+
+        <span>Weltkrieg II</span>
+        <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+          <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+        </svg>
+      </button>
+    </h2>
+    <div
+            id="faqs-text-04"
+            role="region"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+    >
+      <div class="overflow-hidden">
+        <p class="pb-3 pt-14 text-xl text-gray-300">
+          Die Einleitung der Veränderungen des Schweizer Bankgeheimnisses begann mit den Ereignissen des Zweiten Weltkrieges. Die Schweiz wahrte über Gelder aller Seiten Täter und Opfer des Nationalsozialismus sowie von den Alliierten. Dies unterstreicht die Neutralität der Schweiz und zeigt auch, dass diese keine Grenzen zieht, sogar als Finanzplatz während des Krieges. Das Schweizer Bankgeheimnis wurde während der Zeit gut genutzt, sie wurden sicher gelagert. Nach der Kriegszeit jedoch gab es einige nachrichtenlose Vermögen. Dies führte zu Unruhen, da die Schweiz nichts unternahm, um die Auszahlung der Erben ausfindig zu machen. Der öffentliche Druck führte zur Offenlegung und Rückzahlungen an vorhandene Erben. Durch die Offenlegung der Konten wurde der Grundsatz für Privatsphäre des Bankgeheimnisses verletzt.
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr class='w-[95%] rounded-xl h-1.5 my-3 bg-blue-800 border-0'></hr>
+  <div x-data="{ expanded: false }" class="py-2 m-10 text-9xl bg-gray-900 rounded-lg md:text-4xl xs:text-3xl shadow-md pb-10 p-6 my-10">
+    <h2>
+      <button
+              id="faqs-title-05"
+              type="button"
+              class="flex items-center justify-between w-full text-left font-semibold py-2"
+              @click="expanded = !expanded">
+
+        <span>AIA</span>
+        <svg class="fill-blue-700 shrink-0 ml-8" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+          <rect y="7" width="16" height="2" rx="1" class="transform origin-center transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+          <rect y="7" width="16" height="2" rx="1" class="transform origin-center rotate-90 transition duration-200 ease-out" :class="{'!rotate-180': expanded}" />
+        </svg>
+      </button>
+    </h2>
+    <div
+            id="faqs-text-06"
+            role="region"
+            class="grid text-sm text-slate-600 overflow-hidden transition-all duration-300 ease-in-out"
+            :class="expanded ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'"
+    >
+      <div class="overflow-hidden">
+        <p class="pb-3 pt-14 text-xl text-gray-300">
+          Der Automatischen Informationsaustausch, welcher 2017 in Kraft eingetreten ist, wird als das Ende des Schweizer Bankgeheimnis bezeichnet. Die ursprüngliche Definition des Bankgeheimnisses stimmt nicht mehr überein mit dem aktuellen Stand der Dinge. Die Entscheidung den AIA einzuführen, wurde durch internationalen Druck, Geldwäsche und Steuerhinterziehung initialisiert. Durch die AIA ist die Schweiz verpflichtet Informationen über Finanzkonten von Ausländern automatisch dem Heimatland zu übergeben. So wird sichergestellt das eine komplette Übersicht gewährleistet ist und das Bürger sich nicht bereichern oder Steuern hinterziehen können.
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
 
 <footer class="bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-    <div class="md:flex md:justify-between">
+    <div  class="md:flex md:justify-between">
       <div class="mb-6 md:mb-0">
-        <a href="team.html" class="flex items-center">
+        <a href="html/team.html" class="flex items-center">
 
           <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Team Three</span>
         </a>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase  text-white">Resources</h2>
+          <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">Rechtliches</h2>
           <ul class="text-gray-400 font-medium">
+            <li class="mb-4">
+              <a href='../pdf/disclaimer.pdf' download='../pdf/disclaimer.pdf' class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Disclaimer</a>
+            </li>
+            <li class='mb-4'>
+              <a href='../pdf/haftungsauschluss.pdf' download='../pdf/haftungsauschluss.pdf' class='hover:text-white duration-300 ease-in-out'>Datenschutzerklärung</a>
+            </li>
+            <li class=''>
+              <a href='../pdf/Quellen.pdf' download='../pdf/Quellen.pdf' class='hover:text-white duration-300 ease-in-out'>Quellen</a>
+            </li>
+          </ul>
+
+        </div>
+        <div>
+          <h2 class="mb-6 text-sm font-semibold  uppercase  text-white">Resources</h2>
+          <ul class=" text-gray-400 font-medium">
             <li class="mb-4">
               <a href="https://tailwindcss.com/" class=" hover:text-white duration-300 ease-in-out">Tailwind CSS</a>
             </li>
@@ -66,38 +172,39 @@
             <li class="mb-4">
               <a href="https://flowbite.com/" class=" hover:text-white duration-300 ease-in-out">Flowbite</a>
             </li>
+            <li class="mb-4">
+              <a href="https://tailwind-kit.com"  class=" hover:text-white duration-300 ease-in-out">Tailwind Kit</a>
+            </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold text-white uppercase">Find us</h2>
-          <ul class="text-gray-400  font-medium">
+          <h2 class="mb-6 text-sm font-semibold  uppercase text-white">Find us</h2>
+          <ul class=" text-gray-400 font-medium">
             <li class="mb-4">
               <a href="https://github.com/Poisonlocket/PRWR-website" class=" hover:text-white duration-300 ease-in-out">Github</a>
             </li>
             <li>
-              <a href="team.html" class=" hover:text-white duration-300 ease-in-out">Team Three</a>
+              <a href="html/team.html" class=" hover:text-white duration-300 ease-in-out">Team Three</a>
             </li>
           </ul>
         </div>
         <div>
-          <h2 class="mb-6 text-sm font-semibold  uppercase text-white">The Team</h2>
+          <h2 class="mb-6 md text-sm font-semibold uppercase text-white ">The Team</h2>
           <ul class="text-gray-400 font-medium">
             <li class="mb-4">
-              <a class='hover:text-white duration-300 ease-in-out' href='https://bonomettil.ch'>Lorenzo Bonometti - Lead Developer</a>
+              <a class='hover:text-white duration-300 ease-in-out' href='https://github.com/poisonlocket'>Lorenzo Bonometti - Developer</a>
             </li>
             <li class='mb-4'>
-              <a class='hover:text-white duration-300 ease-in-out'>Salih Ejder - Developer</a>
-            </li>
-            <li class=''>
-              <a class='hover:text-white duration-300 ease-in-out'>Saalim Baba - Research &amp; Writing</a>
+              <a href='https://github.com/milaasHD' class='hover:text-white duration-300 ease-in-out'>Saalim Baba - Research &amp; Writing</a>
             </li>
           </ul>
+
         </div>
       </div>
     </div>
-    <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+    <hr class="my-6  sm:mx-auto border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-400 sm:text-center">© 2023 <a href="team.html" class="">Team Three</a>. All Rights Reserved.
+          <span class="text-sm text-gray-500 sm:text-center">© 2023 <a href="html/team.html" class="">Team Three</a>. All Rights Reserved.
           </span>
       <div class="flex mt-4 sm:justify-center sm:mt-0">
         <a class='ml-3' href='https://github.com/Poisonlocket/PRWR-website'>
