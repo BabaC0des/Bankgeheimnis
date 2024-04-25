@@ -9,7 +9,7 @@ A School Project about the swiss Bank secret
 ### Contributors 
 #### Developer
 ```Lorenzo Bonometti```
-#### UI / UX Specialist
+#### Developer
 ```Salih Ejder```
 #### Research and Writing
 ```Saalim Baba```
