@@ -17,7 +17,9 @@ A School Project about the swiss Bank secret
 ```[bankgeheimnis.vercel.app]```
 
 ### How to run the build on your own 
-```npx tailwindcss -i ./css/input.css -o ./css/output.css --watch```
+```bash
+npx tailwindcss -i ./css/input.css -o ./css/output.css --watch
+```
 
 # and always make sure
 ## Coding only on dev main, main is production
