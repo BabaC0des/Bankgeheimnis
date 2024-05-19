@@ -26,8 +26,7 @@ module.exports = {
         "2xl": "1500px",
       },
       backgroundImage: {
-        parallax:
-          'url("/img/web_zurich_paradeplatz_tram_zt_8121_1600x900 - Kopie.jpg")',
+        parallax: 'url("/img/zurich_paradeplatz.webp")',
       },
       spacing: {
         128: "32rem",
