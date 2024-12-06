@@ -5,7 +5,8 @@
 # Projektarbeit Wirtschaft - Das Bankgeheimnis / The Bank Secret
 
 A School Project about the swiss Bank secret
-I continue to work on this project in this repo
+
+**I continue to work on this project in this repo**
 
 ### Contributors 
 #### Developer
