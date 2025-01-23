@@ -490,6 +490,10 @@
     e.name = e.name === 'menu' ? 'close' : 'menu'
     navLinks.classList.toggle('top-[7%]')
   }
+  document.body.style.display = "none";
+  window.onload = function() {
+    document.body.style.display = "block";
+  };
 </script>
 </body>
 </html>
